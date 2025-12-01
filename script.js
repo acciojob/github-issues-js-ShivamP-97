@@ -15,9 +15,9 @@ async function loadIssues(page) {
       li.textContent = issue.title;
       list.appendChild(li);
     });
-
-    document.getElementById("page-heading").textContent = `Page ${page}`;
-
+	
+	document.getElementById("page-heading").textContent = `Page number ${page}`;
+  
   } catch (error) {
     console.error("Error loading issues:", error);
   }
